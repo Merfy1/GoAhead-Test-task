@@ -3,10 +3,11 @@ document.addEventListener("DOMContentLoaded", function(){
     const secondBunner = document.getElementById("secondBunner")
     const header = document.getElementById("header")
     let currentContent = firstBunner;
-    currentContent.style.opacity = "1";
-
+    currentContent.style.opacity = "0";
     function toggleContent() {
         if (currentContent === firstBunner) {
+            const loader = document.querySelector(".loader");
+            loader.style.display = "none";
             firstBunner.style.opacity = "0";
             secondBunner.style.zIndex = "1";
             secondBunner.style.opacity = "1";
