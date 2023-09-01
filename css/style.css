@@ -160,6 +160,10 @@ body{
     border: 1px #ffffff solid;
     cursor: pointer;
 }
+.btn-buy:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
 .title-buy{
     text-transform: uppercase;
     font-family: Roboto;
